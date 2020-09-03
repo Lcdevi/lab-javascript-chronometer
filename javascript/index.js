@@ -18,6 +18,8 @@ function printTime() {
   minUni.innerHTML = printMinutes()[1];
   secDec.innerHTML = printSeconds()[0];
   secUni.innerHTML = printSeconds()[1];
+  milDec.innerHTML = printMilliseconds()[0];
+  milUni.innerHTML = printMilliseconds()[1];
 }
 
 function printMinutes() {
@@ -31,7 +33,7 @@ function printSeconds() {
 
 // ==> BONUS
 function printMilliseconds() {
-  // ... your code goes here
+  return chronometer.twoDigitsNumber(chronometer.getMilliseconds()).split('');
 }
 
 function printSplit() {
